@@ -7,7 +7,7 @@ protectRoute()
 
 async function getProducts() {
     try {
-        var response = await fetch("../js/productsData.json");
+        var response = await fetch("js/productsData.json");
         var data = await response.json();
         var productContainer = document.getElementById("container-products");
 
@@ -211,5 +211,6 @@ function updateUI() {
 
 
 // ===================== INIT =====================
+
 
 updateUI();
